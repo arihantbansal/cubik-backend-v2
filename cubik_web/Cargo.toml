@@ -7,3 +7,7 @@ edition = "2021"
 
 [dependencies]
 cubik_common = {path = "../cubik_common"}
+tokio = {workspace = true}
+tracing-subscriber = {workspace = true}
+axum = {workspace = true}
+tracing = {workspace = true}

@@ -1,8 +1,30 @@
 [workspace]
-
-
 members = [
     'cubik_web',
     "cubik_dashboard",
     "cubik_common",
 ]
+resolver = "2"
+
+[workspace.package]
+version = "0.0.1"
+authors = ["Cubik <dhruvsol@cubik.so>"]
+repository = ""
+homepage = "cubik.so"
+license = ""
+edition = "2021"
+publish = false
+
+[workspace.dependencies]
+anchor-lang = "0.28.0"
+anchor-spl = "0.28.0"
+axum = "0.7.4" 
+http = { version = "1.0.0" }
+serde = { version = "1.0", features = ["derive"] }
+serde_derive = { version = "1.0.195" }
+serde_json = { version = "1.0.111" }
+tokio = { version = "1.13.1", features = ["full"] }
+tower = { version = "0.4.12", features = ["limit", "buffer", "timeout", "load-shed"] }
+tower-http = { version = "0.5.1", features = ["full"] }
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+tracing = { version = "0.1.27" }
