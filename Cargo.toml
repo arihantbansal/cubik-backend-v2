@@ -1,0 +1,8 @@
+[workspace]
+
+
+members = [
+    'cubik_web',
+    "cubik_dashboard",
+    "cubik_common",
+]
